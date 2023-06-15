@@ -83,7 +83,9 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); // these headers are allowed to be forwared in request to our server.
   next();
 });
-
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 //app.use('/feed', feedRoutes);// for feed routes. any request which starts with /feed
 app.use("/auth", authRoutes); // for auth routes. any request which starts with /auth
 app.use("/party", partyRoutes);
