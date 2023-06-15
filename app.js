@@ -110,7 +110,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb://45cCwLBI1qN1M0IO:45cCwLBI1qN1M0IO@cluster0-shard-00-00.xpp89.mongodb.net:27017,cluster0-shard-00-01.xpp89.mongodb.net:27017,cluster0-shard-00-02.xpp89.mongodb.net:27017/Zong-Franchise?ssl=true&replicaSet=atlas-rsta5v-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "mongodb+srv://shoaibmazhar799PromptopiaNextAuth:5KVS3KWgNtYmVMDg@cluster0.ufrabkz.mongodb.net/",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then((result) => {
